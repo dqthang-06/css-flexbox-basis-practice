@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    padding: 30px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 25px;
+    color: #0f172a;
+}
+
+.example-box {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.example-box h2 {
+    font-size: 18px;
+    color: #0284c7;
+    margin-bottom: 6px;
+}
+
+.example-box p {
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 15px;
+}
+
+/* Khung Flex Container chung */
+.container {
+    display: flex;
+    background-color: #f1f5f9;
+    padding: 10px;
+    border: 1px dashed #cbd5e1;
+    border-radius: 6px;
+}
+
+.item {
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+/* 1. VÍ DỤ 1: Đơn vị px (Row) */
+.example-1 {
+    gap: 10px;
+}
+
+.example-1 .item {
+    background-color: lightblue;
+    color: #0369a1;
+}
+
+.example-1 .item1 {
+    flex-basis: 200px;
+}
+
+.example-1 .item2 {
+    flex-basis: 100px;
+}
+
+.example-1 .item3 {
+    flex-basis: 150px;
+}
+
+/* 2. VÍ DỤ 2: flex-direction: column */
+.example-2 {
+    flex-direction: column;
+    gap: 10px;
+    height: 420px;
+}
+
+.example-2 .item {
+    flex-basis: 100px;
+    background-color: lightgreen;
+    color: #15803d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 3. VÍ DỤ 3: Phần trăm (%) */
+.example-3 {
+    gap: 10px;
+}
+
+.example-3 .item {
+    flex-basis: 50%;
+    background-color: lightcoral;
+    color: #991b1b;
+}
+
+/* 4. VÍ DỤ 4: Kết hợp flex-basis và flex-grow */
+.example-4 {
+    width: 600px;
+    gap: 10px;
+}
+
+.example-4 .item {
+    background-color: lightblue;
+    color: #0369a1;
+}
+
+.example-4 .item-grow-1 {
+    flex-basis: 100px;
+    flex-grow: 1;
+}
+
+.example-4 .item-grow-2 {
+    flex-basis: 100px;
+    flex-grow: 2;
+}
+
+.example-4 .item-grow-3 {
+    flex-basis: 100px;
+    flex-grow: 1;
+}
